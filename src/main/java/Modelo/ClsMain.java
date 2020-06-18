@@ -2,6 +2,8 @@ package Modelo;
 import Modelo.ClsPersona;
 import Modelo.ClsGato;
 import Modelo.ClsPerro;
+import Modelo.Clsdocumento;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -20,7 +22,8 @@ public class ClsMain {
         ClsPersona persona = new ClsPersona("Ronny");
         ClsGato gato = new ClsGato();
         ClsPerro perro = new ClsPerro("Firulais");
-        
+        Clsdocumento doc = new Clsdocumento();
+
         gato.setNombre("Manolo");
         
         System.out.printf(gato.getNombre()+" es mascota de "+persona.getName());
