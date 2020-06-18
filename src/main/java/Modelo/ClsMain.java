@@ -12,7 +12,8 @@ import Modelo.ClsPersona;
  *
  * @author ronnycajas
  */
-public class ClsMenu {
+
+public class ClsMain {
         public static void main(String[] args) {
         
         ClsPersona persona = new ClsPersona("Ronny");
