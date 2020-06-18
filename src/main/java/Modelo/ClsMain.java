@@ -1,6 +1,6 @@
 package Modelo;
 import Modelo.ClsPersona;
-
+import Modelo.ClsGato;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -14,16 +14,17 @@ import Modelo.ClsPersona;
  */
 
 public class ClsMain {
+
         public static void main(String[] args) {
         
         ClsPersona persona = new ClsPersona("Ronny");
+        ClsGato gato = new ClsGato();
         
-        System.out.println(persona.getName());
+        gato.setNombre("Manolo");
+        
+        System.out.printf(gato.getNombre()+" es mascota de "+persona.getName());
 
-        persona.setName("Kevin");
-    
-        System.out.println(persona.getName());
-
+        
         
     }
 }
