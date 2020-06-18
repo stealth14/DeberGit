@@ -13,6 +13,7 @@ public class ClsPerro {
         this.nombre = nombre;
     }
 
+    
     public String getNombre() {
         return nombre;
     }
