@@ -19,17 +19,25 @@ public class ClsMain {
 
         public static void main(String[] args) {
         
-        ClsPersona persona = new ClsPersona("Ronny");
+        Clsdocumento doc = new Clsdocumento();    
+        ClsPersona persona = new ClsPersona(" Ronny ");
+        ClsPersona persona2 = new ClsPersona(" Ander ");
         ClsGato gato = new ClsGato();
-        ClsPerro perro = new ClsPerro("Firulais");
-        Clsdocumento doc = new Clsdocumento();
+        ClsGato gato2 = new ClsGato();
+        ClsPerro perro = new ClsPerro(" Firulais ");
+        ClsPerro perro2 = new ClsPerro(" Beto ");
 
-        gato.setNombre("Manolo");
+        gato.setNombre(" Manolo ");
+        gato2.setNombre(" Martin ");
         
-        System.out.printf(gato.getNombre()+" es mascota de "+persona.getName());
-
-        System.out.printf(perro.getNombre()+" es la otra mascota de "+persona.getName());
-
+        //Imprimir 
+        System.out.printf(gato.getNombre()+" es el gato de "+persona.getName());
+        System.out.printf("\n");
+        System.out.printf(perro.getNombre()+" es el perro de "+persona.getName());
+        System.out.printf("\n");
+        System.out.printf(gato2.getNombre()+" es el gato de "+persona2.getName());
+        System.out.printf("\n");
+        System.out.printf(perro2.getNombre()+" es el perro de "+persona2.getName());
         
     }
 }
